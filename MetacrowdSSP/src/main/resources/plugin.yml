@@ -1,0 +1,29 @@
+name: MetacrowdSSP
+version: 2.0.0
+main: com.metacrowd.ssp.MetacrowdSSPPlugin
+api-version: '1.21'
+description: Lightweight SSP plugin for Minecraft advertising network
+authors: [Metacrowd]
+
+commands:
+  mcplace:
+    description: Create a new advertising billboard
+    usage: /mcplace <id> <width> <height>
+    permission: metacrowd.admin
+  mcremove:
+    description: Remove an advertising billboard
+    usage: /mcremove <id>
+    permission: metacrowd.admin
+  mcreload:
+    description: Force reload rotation for all billboards
+    usage: /mcreload
+    permission: metacrowd.admin
+  mcstats:
+    description: Show local statistics
+    usage: /mcstats
+    permission: metacrowd.admin
+
+permissions:
+  metacrowd.admin:
+    description: Admin access to MetacrowdSSP commands
+    default: op
