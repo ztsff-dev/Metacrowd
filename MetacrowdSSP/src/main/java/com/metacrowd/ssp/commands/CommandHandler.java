@@ -143,15 +143,12 @@ public class CommandHandler implements CommandExecutor, TabCompleter {
         sender.sendMessage("§eReloading rotations for all placements...");
 
         plugin.getServer().getScheduler().runTaskAsynchronously(plugin, () -> {
-            int count = 0;
             plugin.getPlacementManager().getAllPlacements().forEach(placement -> {
                 RotationLoader.loadRotationForPlacement(plugin, placement.getId());
-                count++;
             });
             
-            int finalCount = count;
             plugin.getServer().getScheduler().runTask(plugin, () -> {
-                sender.sendMessage("§aReloaded " + finalCount + " placements.");
+                sender.sendMessage("§aReloaded all placements.");
             });
         });
 
