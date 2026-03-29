@@ -4,29 +4,20 @@
 *.o
 *.obj
 *.out
-target/
-
 # Dependencies
+target/
 .mypy_cache/
 .pytest_cache/
 .coverage
-coverage/
-htmlcov/
-
 # Logs and temp files
 *.log
 *.tmp
-
+*.swp
+# Environment
+.env
+.env.local
+*.env.*
 # Editors
 .vscode/
 .idea/
-*.swp
-*.swo
-
-# System files
-.DS_Store
-Thumbs.db
-
-# Maven-specific build artifacts
-MetacrowdSSP/target/
 ```

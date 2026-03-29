@@ -180,8 +180,8 @@ public class ViewTracker {
         Vector to = new Vector(placement.getCenterX(), placement.getCenterY(), placement.getCenterZ());
         Vector fromVec = from.toVector();
         
-        Vector direction = to.subtract(fromVec).normalize();
-        double distance = fromVec.distanceTo(to);
+        Vector direction = to.clone().subtract(fromVec).normalize();
+        double distance = fromVec.distance(to);
         
         try {
             RayTraceResult result = world.rayTraceBlocks(from, direction, distance);

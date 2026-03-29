@@ -2,6 +2,7 @@ package com.metacrowd.ssp.cache;
 
 import com.metacrowd.ssp.MetacrowdSSPPlugin;
 import org.bukkit.Bukkit;
+import org.bukkit.map.MapCanvas;
 import org.bukkit.map.MapRenderer;
 import org.bukkit.map.MapView;
 
