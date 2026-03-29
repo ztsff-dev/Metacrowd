@@ -1,0 +1,24 @@
+# Metacrowd SSP Core v2.0 Configuration
+
+# API endpoint for Google Apps Script
+api:
+  url: "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec"
+
+# Unique server identifier (auto-generated if empty)
+instance:
+  id: ""
+
+# Salt for hashing player UUIDs
+security:
+  salt: "change_this_to_random_string"
+
+# Analytics buffer flush interval (seconds)
+analytics:
+  flush-interval: 30
+
+# Viewability tracking settings
+tracking:
+  max-distance: 32
+  view-angle: 60
+  min-view-duration: 1000
+  check-interval-ticks: 40
